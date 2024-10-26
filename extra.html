@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>ABC Toys</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <!-- Custom CSS -->
+  <style>
+    /* Professional font */
+    body, .navbar {
+      font-family: Arial, sans-serif; /* Professional font */
+    }
+    
+    /* Solid pink navbar customization */
+    .navbar-custom {
+      background-color: #FF69B4; /* Solid Pink Background */
+      width: 100%; /* Make navbar span the full width of the screen */
+      padding: 0; /* Remove padding to ensure it's fully pink */
+    }
+
+    .navbar-custom .container {
+      padding-left: 0; /* Ensure no white space from container */
+      padding-right: 0; /* Ensure no white space from container */
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #FFFFFF; /* White text */
+    }
+
+    .navbar-custom .navbar-brand:hover,
+    .navbar-custom .nav-link:hover {
+      color: #FFA500; /* Orange on hover */
+    }
+
+    .navbar-custom .active > .nav-link {
+      color: #00FF7F; /* Spring Green for active link */
+    }
+    
+    /* Remove background from collapsed menu */
+    .navbar-custom .navbar-collapse {
+      background-color: #FF69B4; /* Keep the pink background when collapsed */
+    }
+
+    /* Body background */
+    body {
+      background-color: #ADD8E6; /* Light Blue */
+    }
+
+    /* Headings with professional fonts */
+    h1 {
+      color: #FF8C00; /* Dark Orange */
+      font-size: 3rem; /* Large font size */
+    }
+    h3 {
+      color: #FF1493; /* Deep Pink */
+      font-size: 2rem;
+    }
+
+    /* Paragraphs */
+    p {
+      color: #006400; /* Dark Green */
+      font-size: 1.25rem; /* Slightly larger for readability */
+    }
+
+    /* Separate container for the main content */
+    .content-container {
+      background-color: #FFFFFF; /* White background for content area */
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    /* Button customization */
+    .btn-custom {
+      background-color: #FFA500; /* Orange */
+      color: #FFFFFF;
+      font-size: 1.25rem;
+    }
+    .btn-custom:hover {
+      background-color: #FF4500; /* OrangeRed */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar Container with solid pink background -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">ABC Toys</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcollapsed" aria-controls="navcollapsed" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navcollapsed">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="location.html">Location</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="extra.html">Extra</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container content-container">
+    <h1>WURFL Device Capabilities</h1>
+    <p>Below are three capabilities offered by the WURFL database that developers can use to test against the device requesting the application:</p>
+
+    <!-- Table of Capabilities -->
+    <table class="table table-bordered">
+      <thead class="thead-light">
+        <tr>
+          <th>Capability</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>brand_name</strong></td>
+          <td>Returns the brand of the device, such as "Apple", "Samsung", or "Google". This allows developers to customize content or functionality based on the device's manufacturer.</td>
+        </tr>
+        <tr>
+          <td><strong>model_name</strong></td>
+          <td>Provides the model name of the device, like "iPhone 12", "Galaxy S21", or "Pixel 6". This can be used to tailor the user experience for specific device models.</td>
+        </tr>
+        <tr>
+          <td><strong>is_mobile</strong></td>
+          <td>Indicates whether the device is a mobile device. Returns <code>true</code> for mobile devices and <code>false</code> for desktops. This helps in serving mobile-optimized content or layouts.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
